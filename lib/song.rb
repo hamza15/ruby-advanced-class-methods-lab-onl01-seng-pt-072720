@@ -47,7 +47,13 @@ class Song
     end
   end
   
-  def self.
+  def self.new_from_filename(file)
+    first_split = file.split(" - ")
+    name = first_split[0]
+    second_split = row[2].split(".")
+    artist = second_split[0]
+    
+  end   
   
   def self.destroy_all
     @@all.clear
