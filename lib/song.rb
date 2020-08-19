@@ -24,8 +24,8 @@ class Song
   
   def self.create_by_name(name)
     song = self.new
-    @name = name
-    song.name = @name
+    song.name = name
+    song.save
     song
   
   def self.destroy_all
