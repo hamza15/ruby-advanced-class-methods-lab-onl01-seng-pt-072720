@@ -51,8 +51,8 @@ class Song
     first_split = file.split(" - ")
     first_split[1] = first_split[1].chomp(".mp3")
     song = self.new
-    song.name = first_split[1]
     song.artist = first_split[0]
+    song.name = first_split[1]
     song
   end   
   
