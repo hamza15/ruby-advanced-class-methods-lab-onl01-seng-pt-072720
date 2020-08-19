@@ -56,7 +56,9 @@ class Song
     song
   end
   
-  def self.
+  def self.create_from_filename
+    
+  end
   
   def self.destroy_all
     @@all.clear
