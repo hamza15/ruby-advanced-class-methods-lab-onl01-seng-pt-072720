@@ -29,6 +29,9 @@ class Song
     song
   end
   
+  def self.find_by_name(name)
+    @@all.find(song)
+  
   def self.destroy_all
     @@all.clear
   end
