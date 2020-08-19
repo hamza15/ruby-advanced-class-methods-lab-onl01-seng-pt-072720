@@ -53,7 +53,6 @@ class Song
     song = self.new
     song.name = first_split[1]
     song.artist = first_split[0]
-    song.save
     song
   end   
   
