@@ -52,6 +52,9 @@ class Song
     name = first_split[0]
     second_split = row[2].split(".")
     artist = second_split[0]
+    song = song.new
+    song.name = name
+    song.artist = artist
     
   end   
   
