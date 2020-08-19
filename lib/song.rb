@@ -30,7 +30,7 @@ class Song
   end
   
   def self.find_by_name(name)
-    @@all.find(song)
+    self.all.find{|person| person.name == name}
   
   def self.destroy_all
     @@all.clear
