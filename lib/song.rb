@@ -53,7 +53,7 @@ class Song
     song.name = first_split[0]
     second_split = first_split[1].split(".")
     song.artist = second_split[0]
-
+    
   end   
   
   def self.destroy_all
