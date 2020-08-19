@@ -42,7 +42,7 @@ class Song
   end 
   
   def self.alphabetical
-    self.all.name.sort
+    @all.name.sort
   end
   
   def self.destroy_all
