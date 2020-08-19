@@ -33,8 +33,13 @@ class Song
     self.all.find{|person| person.name == name}
   end 
   
-  def self.find_or_create_by_name()
-  
+  def self.find_or_create_by_name(name)
+    if self.all.find?(name)
+      self.find_by_name(name)
+    else
+      self.create_by_name(name)
+    end
+  end 
   
   def self.destroy_all
     @@all.clear
